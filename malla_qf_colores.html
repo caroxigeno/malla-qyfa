@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva QF</title>
+  <style>
+    body { font-family: sans-serif; background: #f9f9f9; }
+    .malla { display: flex; flex-direction: column; gap: 20px; padding: 20px; }
+    .semestre { border: 1px solid #ccc; padding: 10px; border-radius: 8px; background: #fff; }
+    .semestre h2 { margin-top: 0; }
+    .ramo {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: 2px solid #888;
+      background-color: #eee;
+      cursor: pointer;
+    }
+    .ramo.aprobado {
+      text-decoration: line-through;
+      background-color: #c3e6cb;
+      border-color: #28a745;
+    }
+    .ramo.bloqueado {
+      background-color: #ddd;
+      cursor: not-allowed;
+      border-color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<h1 style="text-align: center;">Malla Interactiva - Química y Farmacia</h1>
+<div class="malla">
+<div class="semestre"><h2>Semestre 1</h2><div class="ramo" id="DQUI1045" style="background-color: #d0ebff">Química General I</div><div class="ramo" id="DBIO1091" style="background-color: #d0ebff">Biología Celular</div><div class="ramo" id="FORI0001" style="background-color: #ffd6e0">Antropología</div><div class="ramo" id="QYFAA001" style="background-color: #d3f9d8">Intro a Ciencias Farmacéuticas</div><div class="ramo" id="DCEX0002" style="background-color: #d0ebff">Matemática</div><div class="ramo" id="QYFAA002" style="background-color: #d3f9d8">Habilidades Científicas</div></div><div class="semestre"><h2>Semestre 2</h2><div class="ramo bloqueado" id="DQUI1046" style="background-color: #d0ebff">Química General II</div><div class="ramo bloqueado" id="DCEX0003" style="background-color: #d0ebff">Cálculo Diferencial</div><div class="ramo bloqueado" id="DCEX0019" style="background-color: #d0ebff">Física</div><div class="ramo bloqueado" id="FORI0002" style="background-color: #ffd6e0">Ética</div><div class="ramo bloqueado" id="QYFAB001" style="background-color: #d3f9d8">Fundamentos Quehacer Farmacéutico</div><div class="ramo bloqueado" id="DCEX0005" style="background-color: #d0ebff">Bioestadística</div></div><div class="semestre"><h2>Semestre 3</h2><div class="ramo" id="DSPU0012" style="background-color: #d0ebff">Salud Poblacional</div><div class="ramo bloqueado" id="DQUI1047" style="background-color: #d0ebff">Química Analítica Cuali-Cuantitativa</div><div class="ramo bloqueado" id="DQUI1052" style="background-color: #d0ebff">Química Orgánica</div><div class="ramo bloqueado" id="DBIO1085" style="background-color: #d0ebff">Fisiología Integrada</div><div class="ramo bloqueado" id="DQUI1053" style="background-color: #d0ebff">Fisicoquímica</div><div class="ramo" id="ELECDGEE01" style="background-color: white">Gestión Personal y Habilidades</div></div><div class="semestre"><h2>Semestre 4</h2><div class="ramo bloqueado" id="DSPU0014" style="background-color: #d0ebff">Epidemiología</div><div class="ramo bloqueado" id="DQUI1054" style="background-color: #d0ebff">Análisis Químico Instrumental</div><div class="ramo bloqueado" id="DMOR0019" style="background-color: #d0ebff">Fisiopatología</div><div class="ramo bloqueado" id="DBIO1094" style="background-color: #d0ebff">Bioquímica General</div><div class="ramo bloqueado" id="DQUI1055" style="background-color: #d0ebff">Química Orgánica Avanzada</div><div class="ramo" id="QYFAD001" style="background-color: #d3f9d8">Hito Evaluativo Integrativo</div></div><div class="semestre"><h2>Semestre 5</h2><div class="ramo bloqueado" id="DBIO1087" style="background-color: white">Farmacología I</div><div class="ramo bloqueado" id="QYFAE001" style="background-color: #d3f9d8">Tecnología Farmacéutica I</div><div class="ramo bloqueado" id="QYFAE002" style="background-color: #d3f9d8">Química Farmacéutica I</div><div class="ramo bloqueado" id="DBIO1095" style="background-color: #d0ebff">Microbiología General</div><div class="ramo bloqueado" id="FORI0003" style="background-color: #ffd6e0">Persona y Sociedad</div><div class="ramo" id="FACU0004" style="background-color: #d0ebff">Salud Digital</div></div><div class="semestre"><h2>Semestre 6</h2><div class="ramo bloqueado" id="DBIO1096" style="background-color: white">Farmacología II</div><div class="ramo bloqueado" id="QYFAF001" style="background-color: #d3f9d8">Tecnología Farmacéutica II</div><div class="ramo bloqueado" id="QYFAF002" style="background-color: #d3f9d8">Química Farmacéutica II</div><div class="ramo" id="DEBI0002" style="background-color: #ffd6e0">Bioética</div><div class="ramo bloqueado" id="QYFAF003" style="background-color: #d3f9d8">Práctica I: Rol del QF</div><div class="ramo" id="ELECFORI01" style="background-color: #ffd6e0">Electivo I: Formación Integral</div></div><div class="semestre"><h2>Semestre 7</h2><div class="ramo" id="ELECFORI02" style="background-color: #ffd6e0">Electivo II: Formación Integral</div><div class="ramo" id="DSPU0011" style="background-color: #fff3bf">Metodología de la Investigación</div><div class="ramo bloqueado" id="QYFAG001" style="background-color: #d3f9d8">Farmacia Clínica y Atención Farmacéutica</div><div class="ramo bloqueado" id="QYFAG002" style="background-color: #d3f9d8">Farmacognosia y Fitoterapia</div><div class="ramo" id="QYFAG003" style="background-color: #d3f9d8">Calidad y Aseguramiento</div><div class="ramo bloqueado" id="QYFAG004" style="background-color: #d3f9d8">Legislación Farmacéutica</div></div><div class="semestre"><h2>Semestre 8</h2><div class="ramo bloqueado" id="QYFAH001" style="background-color: #d3f9d8">Toxicología</div><div class="ramo bloqueado" id="QYFAH002" style="background-color: #d3f9d8">Farmacia Clínica II</div><div class="ramo bloqueado" id="QYFAH003" style="background-color: #d3f9d8">Biofarmacia</div><div class="ramo bloqueado" id="QYFAH004" style="background-color: #d3f9d8">Práctica II: Farmacia Comunitaria</div><div class="ramo" id="QYFAH005" style="background-color: #ffd6e0">Hito Integrativo Interprofesional</div><div class="ramo" id="QYFAH006" style="background-color: #d3f9d8">Farmacia Asistencial</div></div><div class="semestre"><h2>Semestre 9</h2><div class="ramo" id="QYFAI001" style="background-color: #fff3bf">Gestión y Marketing Farmacéutico</div><div class="ramo" id="ELECFORIO3" style="background-color: white">Electivo III: Formación Integral</div><div class="ramo" id="ELECQYFA01" style="background-color: #ffd6e0">Electivo QF I</div><div class="ramo" id="ELECQYFA02" style="background-color: #ffd6e0">Electivo QF II</div><div class="ramo" id="ELECQYFA03" style="background-color: #ffd6e0">Electivo QF III</div><div class="ramo" id="QYFAI002" style="background-color: #d3f9d8">Tecnovigilancia y Farmacovigilancia</div></div><div class="semestre"><h2>Semestre 10</h2><div class="ramo" id="QYFAJ001" style="background-color: #d3f9d8">Internado</div></div>
+</div>
+<script>
+const desbloqueos = {
+  "DQUI1045": ['DQUI1046', 'DQUI1052'],
+  "DCEX0002": ['DCEX0003', 'DCEX0019', 'DCEX0005'],
+  "FORI0001": ['FORI0002'],
+  "QYFAA001": ['QYFAB001'],
+  "DQUI1046": ['DQUI1047', 'DQUI1053'],
+  "DBIO1091": ['DBIO1085'],
+  "DSPU0012": ['DSPU0014'],
+  "DQUI1047": ['DQUI1054'],
+  "DBIO1085": ['DMOR0019'],
+  "DQUI1052": ['DBIO1094', 'DQUI1055'],
+  "DMOR0019": ['DBIO1087'],
+  "DQUI1053": ['QYFAE001'],
+  "DQUI1055": ['QYFAE002'],
+  "DBIO1094": ['DBIO1095'],
+  "FORI0002": ['FORI0003'],
+  "DBIO1087": ['DBIO1096'],
+  "QYFAE001": ['QYFAF001'],
+  "QYFAE002": ['QYFAF002'],
+  "DBIO1096": ['QYFAF003', 'QYFAG001', 'QYFAH001'],
+  "QYFAF002": ['QYFAG002'],
+  "QYFAF001": ['QYFAG004'],
+  "QYFAG001": ['QYFAH002'],
+  "QYFAG003": ['QYFAH003'],
+  "QYFAG004": ['QYFAH004'],
+};
+
+document.querySelectorAll('.ramo').forEach(ramo => {
+  ramo.addEventListener('click', () => {
+    if (ramo.classList.contains('bloqueado')) return;
+    ramo.classList.toggle('aprobado');
+    const id = ramo.id;
+    if (ramo.classList.contains('aprobado') && desbloqueos[id]) {
+      desbloqueos[id].forEach(dest => {
+        document.getElementById(dest)?.classList.remove('bloqueado');
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
